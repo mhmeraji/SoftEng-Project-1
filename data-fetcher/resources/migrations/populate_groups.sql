@@ -1,0 +1,9 @@
+INSERT INTO "groups_info" VALUES ('bartarinsahm', 'bourse', 100, True);
+INSERT INTO "groups_info" VALUES ('GoldenSignalChannel', 'bourse', 100, True);
+INSERT INTO "groups_info" VALUES ('signal_burs', 'bourse', 100, True);
+INSERT INTO "groups_info" VALUES ('soheil_s_star', 'bourse', 100, True);
+INSERT INTO "groups_info" VALUES ('talare', 'bourse', 100, True);
+INSERT INTO "groups_info" VALUES ('hamian_bourse', 'bourse', 100, True);
+INSERT INTO "groups_info" VALUES ('sepanta_64', 'bourse', 100, True);
+INSERT INTO "groups_info" VALUES ('burs_signal', 'bourse', 100, True);
+INSERT INTO "groups_info" VALUES ('VIPSIGNALLL', 'bourse', 100, True);

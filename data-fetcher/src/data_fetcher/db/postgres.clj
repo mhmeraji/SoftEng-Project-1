@@ -20,6 +20,28 @@
 ;; Query & DB Functions
 ;;------------------------------------------------------------------;;
 
+(defn- <-groups-info-query
+  []
+  (-> (honey/select :*)
+      (honey/from :groups_info)))
+
+(defn- <-groups-info
+  [conn]
+  (->> (<-groups-info-query)
+       (gool/query- conn)
+       (into [])))
+
+(defn- ->insert-message-query
+  [message]
+  (-> (honey/insert-into :messages)
+      (honey/values [message])
+      (psqlh/returning :m_id)))
+
+(defn- ->insert-message [conn message]
+  (->> (->insert-message-query message)
+       (gool/query- conn)
+       first))
+
 ;;------------------------------------------------------------------;;
 ;; Polling Functions
 ;;------------------------------------------------------------------;;
@@ -102,8 +124,26 @@
 
     proto/Access
 
+    (<-groups    [db]
+      (proto/read-only-transact!
+        db (fn [conn]
+             (<-groups-info conn))))
+
     (<-output-ch [_]
-      (->> input-ch)))
+      (->> input-ch))
+
+
+    (insert-message! [db message]
+      (try
+        (when (some? (:message message))
+          (proto/transact!
+            db (fn [conn]
+                 (->insert-message conn message))))
+        (catch Exception e
+          (timbre/error ["Encountered Error While Writing message to DB"
+                         message e])
+          (throw e))))
+    )
 
 ;;------------------------------------------------------------------;;
 

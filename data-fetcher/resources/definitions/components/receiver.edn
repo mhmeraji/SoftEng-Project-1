@@ -4,10 +4,11 @@
  ;;-----------------------------------------;;
  :component/config  {:component/type     #ref [:component/type]
                      ;;-----------------------------------------;;
-                     :fetch-rate         1000
+                     :fetch-rate         10000
                      ;;-----------------------------------------;;
-                     :socket-timeout     2000
-                     :connection-timeout 2000}
+                     :socket-timeout     6000
+                     :connection-timeout 6000
+                     :sleep-time         3000}
  ;;-----------------------------------------;;
  :component/deps    {:db :db
                      :state :state}}

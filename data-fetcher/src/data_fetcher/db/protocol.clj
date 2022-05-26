@@ -12,6 +12,8 @@
   (get-connection [db]))
 
 (defprotocol Access
+  (<-groups    [db])
+  (insert-message! [db message])
   (<-output-ch [db]))
 
 ;;------------------------------------------------------------------;;

@@ -16,16 +16,27 @@ CREATE TABLE "users_info"
 
 CREATE TABLE "messages"
 (
-  "id"                  varchar(32)                    PRIMARY KEY,
-  "pinned"              boolean              NOT NULL,
-  "silent"              boolean              NOT NULL,
-  "edit_hide"           boolean              NOT NULL,
-  "noforwards"          boolean              NOT NULL,
-  "mentioned"           boolean              NOT NULL,
-  "forwards_number"     int                  NOT NULL,
-  "channel_id"          varchar(32)                    REFERENCES groups_info(channel_id),
-  "body"                text                 NOT NULL,
-  "views"               int                  NOT NULL
+  "id"                  serial                        PRIMARY KEY,
+  "m_id"                bigint               NOT NULL,
+  "date"                bigint               NOT NULL,
+  "edit_date"           bigint,
+  "pinned"              boolean,
+  "silent"              boolean,
+  "edit_hide"           boolean,
+  "noforwards"          boolean,
+  "mentioned"           boolean,
+  "legacy"              boolean,
+  "from_scheduled"      boolean,
+  "out"                 boolean,
+  "forwards"            bigint,
+  "post"                boolean,
+  "channel-id"          varchar(32)          REFERENCES groups_info(channel_id),
+  "message"             text,
+  "views"               int,
+  "persisted-at"        timestamp
+                        without time zone
+                        DEFAULT
+                        current_timestamp
 );
 
 CREATE TABLE "isins"
@@ -37,7 +48,7 @@ CREATE TABLE "isins"
 CREATE TABLE "message_isin"
   (
     "id"                  serial                        PRIMARY KEY,
-    "message_id"          varchar(32)         REFERENCES messages(id),
+    "message_id"          bigint              REFERENCES messages(id),
     "isin_id"             varchar(32)         REFERENCES isins(isin)
   );
 

@@ -9,10 +9,15 @@
    [taoensso.timbre :as timbre]
 
    [hermes.lib.component.core :as hermes.component]
-   ))
+   [data-fetcher.state.protocol :as proto]))
 
 ;;------------------------------------------------------------------;;
 ;;------------------------------------------------------------------;;
+
+(defn in?
+  "true if coll contains elm"
+  [coll elm]
+  (some #(= elm %) coll))
 
 (defn- initiate-state
   []
@@ -35,7 +40,32 @@
   (stop [component]
     (timbre/info "Stopping State Component")
     (-> component))
+
+  proto/Access
+
+  (<-state [state]
+    (deref ref-state))
+
+  (repeated-message?! [state message]
+    (let [st-map     (proto/<-state state)
+          id         (:m_id message)
+          channel-id (:channel-id message)
+          messages   (get-in st-map [:signals channel-id])
+          result-map (if (nil? channel-id)
+                       (assoc st-map channel-id [])
+                       (->> st-map))]
+      (if (in? messages id)
+        (->> true)
+        (do
+          (dosync
+            (ref-set
+              ref-state
+              (update-in result-map
+                         [:signals channel-id]
+                         conj id)))
+          (->> false)))))
   )
+
 
 ;;------------------------------------------------------------------;;
 ;;------------------------------------------------------------------;;
