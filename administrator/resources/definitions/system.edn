@@ -1,0 +1,9 @@
+{:component/type      [:administrator :v-0.1.0]
+ :component/system?   true
+ :component/namespace :administrator
+ ;;-----------------------------------------;;
+ :component/sub-components
+ {:admin/db         #include "./components/db.edn"
+  :admin/web        #include "./components/web.edn"
+  }
+ }

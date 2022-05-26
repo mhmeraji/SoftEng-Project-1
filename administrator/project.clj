@@ -51,7 +51,7 @@
   :global-vars {*warn-on-reflection* false
                 *assert*             true}
 
-  :main data-fetcher.core
+  :main administrator.core
 
   :profiles {:dev     {:global-vars  {*warn-on-reflection* true
                                       *assert*             true}

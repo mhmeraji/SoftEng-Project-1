@@ -1,0 +1,13 @@
+{:component/type    [:web-server :pedestal]
+ :component/system? false
+ :component/name    :web-server
+ ;;-----------------------------------------;;
+ :component/config  {:component/type  #ref [:component/type]
+                     :env             :dev
+                     :host            "0.0.0.0"
+                     :port            8080
+                     :resource-path   "/public"
+                     :allowed-origins {:creds           true
+                                       :allowed-origins ["http://localhost:8080"]}}
+ ;;-----------------------------------------;;
+ :component/deps    {:db     :db}}
