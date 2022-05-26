@@ -1,0 +1,13 @@
+{:component/type    [:receiver :telegram :v-0.0.1]
+ :component/system? false
+ :component/name    :receiver
+ ;;-----------------------------------------;;
+ :component/config  {:component/type     #ref [:component/type]
+                     ;;-----------------------------------------;;
+                     :fetch-rate         1000
+                     ;;-----------------------------------------;;
+                     :socket-timeout     2000
+                     :connection-timeout 2000}
+ ;;-----------------------------------------;;
+ :component/deps    {:db :db
+                     :state :state}}

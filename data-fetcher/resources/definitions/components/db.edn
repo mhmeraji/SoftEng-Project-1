@@ -1,0 +1,15 @@
+{:component/type    [:db :postgres :v-0.0.1]
+ :component/system? false
+ :component/name    :db
+ ;;-----------------------------------------;;
+ :component/config  {:component/type #ref [:component/type]
+                     :type           :postgres
+                     :secrets        {:user "postgres"
+                                      :pass "postgres"}
+                     :classname      "org.postgresql.Driver"
+                     :subprotocol    "postgresql"
+                     :subname        "//localhost:5432/postgres"
+                     :user           "postgres"
+                     :password       "postgres"}
+ ;;-----------------------------------------;;
+ :component/deps    {}}
