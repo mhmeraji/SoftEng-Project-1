@@ -20,6 +20,17 @@
 ;; Query & DB Functions
 ;;------------------------------------------------------------------;;
 
+(defn- <-last-records-query
+  []
+  (-> (honey/select :channel-id :m_id)
+      (honey/from :messages)))
+
+(defn- <-last-records
+  [conn]
+  (->> (<-last-records-query)
+       (gool/query- conn)
+       (into [])))
+
 (defn- <-groups-info-query
   []
   (-> (honey/select :*)
@@ -132,6 +143,10 @@
     (<-output-ch [_]
       (->> input-ch))
 
+    (<-last-records [db]
+      (proto/read-only-transact!
+        db (fn [conn]
+             (<-last-records conn))))
 
     (insert-message! [db message]
       (try

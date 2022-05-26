@@ -7,6 +7,7 @@
    [com.stuartsierra.component :as component]
 
    [taoensso.timbre :as timbre]
+   [data-fetcher.db.protocol :as db.proto]
 
    [hermes.lib.component.core :as hermes.component]
    [data-fetcher.state.protocol :as proto]))
@@ -20,12 +21,23 @@
   (some #(= elm %) coll))
 
 (defn- initiate-state
-  []
-  (ref {:signals {}}))
+  [init-value]
+  (ref {:signals init-value}))
+
+(defn- fetch-db-last-records
+  [db]
+  (let [last-records (db.proto/<-last-records db)
+        grouped      (group-by :channel-id last-records)]
+    (reduce
+      (fn [acc ch]
+        (let [ids (get grouped ch)]
+          (assoc acc ch (map :m_id ids))))
+      {}
+      (keys grouped))))
 
 (defrecord STATE-v-0-1-0
 
-    [config ref-state]
+    [config ref-state db]
 
   ;;----------------------------------------------------------------;;
   component/Lifecycle
@@ -33,7 +45,8 @@
 
   (start [component]
     (timbre/info ["Starting State Component" config])
-    (let [init-state (initiate-state)]
+    (let [db-initial (fetch-db-last-records db)
+          init-state (initiate-state db-initial)]
       (-> component
           (assoc :ref-state init-state))))
 

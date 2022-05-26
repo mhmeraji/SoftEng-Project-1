@@ -13,6 +13,7 @@
 
 (defprotocol Access
   (<-groups    [db])
+  (<-last-records [db])
   (insert-message! [db message])
   (<-output-ch [db]))
 

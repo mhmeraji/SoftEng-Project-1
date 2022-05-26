@@ -4,4 +4,4 @@
  ;;-----------------------------------------;;
  :component/config  {:component/type #ref [:component/type]}
  ;;-----------------------------------------;;
- :component/deps    {}}
+ :component/deps    {:db :db}}
