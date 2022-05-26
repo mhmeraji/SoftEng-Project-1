@@ -1,0 +1,8 @@
+{:component/type      [:data-fetcher :v-0.1.0]
+ :component/system?   true
+ :component/namespace :data-fetcher
+ ;;-----------------------------------------;;
+ :component/sub-components
+ {:data-fetcher/db               #include "./components/db.edn"
+  :data-fetcher/receiver         #include "./components/receiver.edn"}
+ }
