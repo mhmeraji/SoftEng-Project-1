@@ -1,47 +1,71 @@
-<mxfile host="app.diagrams.net" modified="2022-05-03T17:03:16.849Z" agent="5.0 (X11)" etag="ozsz8BHTFxNFjBGNABw2" version="17.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-26T20:31:33.548Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36" etag="1p8m6D79KW5T6P_pX_lV" version="17.5.0" type="github">
   <diagram id="Rk4-fN7tlNZv6b1Isxb0" name="Page-1">
-    <mxGraphModel dx="1350" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1350" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="KK571Tp6TIUm17jvA53d-28" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" edge="1" parent="1" source="KK571Tp6TIUm17jvA53d-1" target="KK571Tp6TIUm17jvA53d-26">
+        <mxCell id="KK571Tp6TIUm17jvA53d-28" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" parent="1" source="KK571Tp6TIUm17jvA53d-1" target="KK571Tp6TIUm17jvA53d-26" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="160" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KK571Tp6TIUm17jvA53d-32" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" edge="1" parent="1" source="KK571Tp6TIUm17jvA53d-1" target="KK571Tp6TIUm17jvA53d-19">
+        <mxCell id="KK571Tp6TIUm17jvA53d-32" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" parent="1" source="KK571Tp6TIUm17jvA53d-1" target="KK571Tp6TIUm17jvA53d-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KK571Tp6TIUm17jvA53d-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-2/24/database-128.png;fillColor=#F694C1;strokeColor=#AF45ED;fontColor=#095C86;" vertex="1" parent="1">
+        <mxCell id="KK571Tp6TIUm17jvA53d-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-2/24/database-128.png;fillColor=#F694C1;strokeColor=#AF45ED;fontColor=#095C86;" parent="1" vertex="1">
           <mxGeometry x="360" y="260" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="KK571Tp6TIUm17jvA53d-2" value="&lt;div&gt;Data Warehouse&lt;/div&gt;&lt;div&gt;Using Postgresql Database&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;sketch=0;" vertex="1" parent="1">
+        <mxCell id="KK571Tp6TIUm17jvA53d-2" value="&lt;div&gt;Data Warehouse&lt;/div&gt;&lt;div&gt;Using Postgresql Database&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;sketch=0;" parent="1" vertex="1">
           <mxGeometry x="260" y="340" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="KK571Tp6TIUm17jvA53d-30" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" edge="1" parent="1" source="KK571Tp6TIUm17jvA53d-19" target="KK571Tp6TIUm17jvA53d-1">
+        <mxCell id="KK571Tp6TIUm17jvA53d-30" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" parent="1" source="KK571Tp6TIUm17jvA53d-19" target="KK571Tp6TIUm17jvA53d-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KK571Tp6TIUm17jvA53d-31" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" edge="1" parent="1" source="KK571Tp6TIUm17jvA53d-19" target="KK571Tp6TIUm17jvA53d-1">
+        <mxCell id="KK571Tp6TIUm17jvA53d-31" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" parent="1" source="KK571Tp6TIUm17jvA53d-19" target="KK571Tp6TIUm17jvA53d-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <object placeholders="1" c4Name="Data Fetcher " c4Type="Component" c4Technology="A single threaded python component" c4Description="A single threaded component responsible for fetching &amp; preprocessing data " label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="KK571Tp6TIUm17jvA53d-19">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#dae8fc;align=center;arcSize=6;strokeColor=#6c8ebf;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];sketch=0;" vertex="1" parent="1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#dae8fc;align=center;arcSize=6;strokeColor=#6c8ebf;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];sketch=0;" parent="1" vertex="1">
             <mxGeometry x="150" y="530" width="240" height="120" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="Reporter" c4Type="Component" c4Technology="PowerBI" c4Description="Service front-end which also contains authorization and authentication mechanisms" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="KK571Tp6TIUm17jvA53d-26">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#dae8fc;align=center;arcSize=6;strokeColor=#6c8ebf;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];sketch=0;" vertex="1" parent="1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#dae8fc;align=center;arcSize=6;strokeColor=#6c8ebf;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];sketch=0;" parent="1" vertex="1">
             <mxGeometry x="120" y="50" width="240" height="120" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="KK571Tp6TIUm17jvA53d-33" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" edge="1" parent="1" source="KK571Tp6TIUm17jvA53d-29" target="KK571Tp6TIUm17jvA53d-1">
+        <mxCell id="KK571Tp6TIUm17jvA53d-33" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#095C86;strokeColor=#60E696;fillColor=#F694C1;" parent="1" source="KK571Tp6TIUm17jvA53d-29" target="KK571Tp6TIUm17jvA53d-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <object placeholders="1" c4Name="Administration" c4Type="Component" c4Technology="python" c4Description="A gateway used for updating system configuration and fetching information" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="KK571Tp6TIUm17jvA53d-29">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#dae8fc;align=center;arcSize=6;strokeColor=#6c8ebf;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];sketch=0;" vertex="1" parent="1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#dae8fc;align=center;arcSize=6;strokeColor=#6c8ebf;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];sketch=0;" parent="1" vertex="1">
             <mxGeometry x="520" y="50" width="240" height="120" as="geometry" />
           </mxCell>
         </object>
+        <mxCell id="9Kip8tFskgt8w9FNpQ4C-2" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="420" as="sourcePoint" />
+            <mxPoint x="450" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="450" y="420" />
+              <mxPoint x="400" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9Kip8tFskgt8w9FNpQ4C-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9Kip8tFskgt8w9FNpQ4C-3" target="KK571Tp6TIUm17jvA53d-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="Analyser" c4Type="Component" c4Technology="Clojure + Python" c4Description="A complicated component with help cloud utilities responsible for detection and analysis of new telegram messages " label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="9Kip8tFskgt8w9FNpQ4C-3">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#dae8fc;align=center;arcSize=6;strokeColor=#6c8ebf;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];sketch=0;" vertex="1" parent="1">
+            <mxGeometry x="560" y="520" width="240" height="120" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="9Kip8tFskgt8w9FNpQ4C-4" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="420" as="sourcePoint" />
+            <mxPoint x="450" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
