@@ -1,13 +1,3 @@
-(defproject data-fetcher "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
-            :url "https://www.eclipse.org/legal/epl-2.0/"}
-  :dependencies [[org.clojure/clojure "1.10.3"]
-                 [clj-http "3.12.3"]
-                 [cheshire "5.10.0"]
-                 [com.taoensso/timbre "5.1.2"]]
-  :repl-options {:init-ns data-fetcher.core})
 (defproject data-fetcher "0.1.0"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
@@ -44,16 +34,8 @@
                  ;; hermes libraries
                  [hermes.lib/component "1.0.0"]
 
-                 ;;pedestal
-                 [io.pedestal/pedestal.service       "0.5.10"]
-                 [io.pedestal/pedestal.service-tools "0.5.10"]
-                 [io.pedestal/pedestal.route         "0.5.10"]
-                 [io.pedestal/pedestal.jetty         "0.5.10"]
-                 ;;
                  [org.clojure/test.check "1.1.0"]
                  [org.clojure/spec.alpha "0.2.187"]]
-
-  ;; :repl-options {:init-ns hermes.van-buren.sle-router.core}
 
   :min-lein-version "2.0.0"
 
