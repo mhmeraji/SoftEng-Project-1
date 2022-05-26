@@ -3,6 +3,7 @@
  :component/namespace :data-fetcher
  ;;-----------------------------------------;;
  :component/sub-components
- {:data-fetcher/db               #include "./components/db.edn"
-  :data-fetcher/receiver         #include "./components/receiver.edn"}
+ {:fetcher/db               #include "./components/db.edn"
+  :fetcher/state            #include "./components/state.edn"
+  :fetcher/receiver         #include "./components/receiver.edn"}
  }

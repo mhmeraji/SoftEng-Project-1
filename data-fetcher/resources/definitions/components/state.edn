@@ -1,0 +1,7 @@
+{:component/type    [:state :ref :v-0.0.1]
+ :component/system? false
+ :component/name    :state
+ ;;-----------------------------------------;;
+ :component/config  {:component/type #ref [:component/type]}
+ ;;-----------------------------------------;;
+ :component/deps    {}}

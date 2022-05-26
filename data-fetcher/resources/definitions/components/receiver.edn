@@ -9,4 +9,5 @@
                      :socket-timeout     2000
                      :connection-timeout 2000}
  ;;-----------------------------------------;;
- :component/deps    {:db :db}}
+ :component/deps    {:db :db
+                     :state :state}}
