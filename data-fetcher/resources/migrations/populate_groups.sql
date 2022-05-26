@@ -7,3 +7,4 @@ INSERT INTO "groups_info" VALUES ('hamian_bourse', 'bourse', 100, True);
 INSERT INTO "groups_info" VALUES ('sepanta_64', 'bourse', 100, True);
 INSERT INTO "groups_info" VALUES ('burs_signal', 'bourse', 100, True);
 INSERT INTO "groups_info" VALUES ('VIPSIGNALLL', 'bourse', 100, True);
+INSERT INTO "groups_info" VALUES ('vipsah', 'bourse', 100, True);
