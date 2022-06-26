@@ -39,11 +39,12 @@ CREATE TABLE "messages"
                         current_timestamp
 );
 
-CREATE TABLE "isins"
-  (
-    "isin"                varchar(32)                  PRIMARY KEY,
-    "fa_name"             text                 NOT NULL
-  );
+CREATE TABLE "isins" (
+       "isin"         varchar(64)            PRIMARY KEY,
+       "short-name"   varchar(64)            NOT NULL,
+       "market-type"  varchar(32)            NOT NULL
+);
+
 
 CREATE TABLE "message_isin"
   (

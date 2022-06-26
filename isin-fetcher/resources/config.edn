@@ -1,0 +1,9 @@
+{:batch-size      50
+ :mabna-location  "https://v1.db.api.mabnadp.com/exchange/instruments"
+ ;; ----------------------------
+ :sql-type        :postgres
+ :sql-classname   "org.postgresql.Driver"
+ :sql-subprotocol "postgresql"
+ :sql-subname     "//localhost:5432/postgres"
+ :sql-user        "postgres"
+ :sql-password    "postgres"}
